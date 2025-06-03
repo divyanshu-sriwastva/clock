@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+    <main class="flex">
+      <img src="Assets/clock.svg" alt="" width="110"/>
+      <h1></h1>
+      <div class="set-time flex">
+        <div class="outline select">
+          <select name="" id="hours">
+            <option value="" selected hidden>Hour</option>
+          </select>
+        </div>
+        <div class="outline select">
+          <select name="" id="minutes">
+            <option value="" selected hidden>Minute</option>
+          </select>
+        </div>
+        <div class="outline select">
+          <select name="" id="am_pm">
+            <option value="" selected hidden>AM/PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+      <p class="warn"></p>
+      <button>Set Alarm</button>
+      <button class="clr">Clear Alarm</button>
+    </main>
+    <audio src="Assets/ringtone.mp3" loop></audio>
+  </body>
+  <script src="index.js"></script>
+</html>
