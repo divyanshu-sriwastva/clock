@@ -82,7 +82,10 @@ button:hover {
 }
 .clr {
   display: none;
+  background-color: rgb(255, 24, 24);
 }
+
+
 
 .alarm-img {
   animation: shake 0.3s infinite;
